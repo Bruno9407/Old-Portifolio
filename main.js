@@ -1,7 +1,8 @@
 //Type writer
 
 function typeWriter(elemento){
-    const textoArray = elemento.innerHTML.split('')
+    const texto = "Bruno Xavier"
+    const textoArray = texto.split('')
     elemento.innerHTML = ''
     textoArray.forEach((letra, i) => {
         setTimeout(() => {
@@ -10,6 +11,13 @@ function typeWriter(elemento){
     });
 }
 const titulo = document.querySelector('.nome');
-typeWriter(titulo) 
+
+
+
+const foto = document.querySelector(".eu")
+setTimeout(()=>{
+    typeWriter(titulo)
+    foto.classList.add("foto")
+}, 1000)
 
 
