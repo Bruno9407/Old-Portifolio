@@ -10,6 +10,7 @@ function typeWriter(elemento){
         }, 150 * i)
     });
 }
+
 const titulo = document.querySelector('.nome');
 
 
