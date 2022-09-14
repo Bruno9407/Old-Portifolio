@@ -75,9 +75,9 @@ nav a:hover{
 
 main{
     max-width: 1200px;
-    margin: auto;
+    margin: 100px auto;
     display: grid;
-    row-gap: 50px;
+    row-gap: 150px;
 }
 
 .eu{
@@ -171,6 +171,8 @@ h2{
     color: white;
 }
 
+
+
 /*Contato*/
 
 .flex-contatos{
@@ -183,6 +185,25 @@ h2{
     display: grid;
     justify-items: center;
 }
+
+/*anime*/
+
+.projetos{
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+.contato{
+    opacity: 0;
+    transform: translateY(80px); 
+}
+
+.anime{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+
 
 /*Footer*/
 
@@ -201,6 +222,8 @@ footer p{
     padding: 5px;
     margin: 0px 15px;
 }
+
+
 
 
 @media (max-width: 1000px){
