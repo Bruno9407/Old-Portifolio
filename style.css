@@ -188,13 +188,8 @@ h2{
 
 /*anime*/
 
-.projetos{
-    opacity: 0;
-    transform: translateY(80px);
-    transition: 1s;
-}
 
-.contato{
+.content-anime{
     opacity: 0;
     transform: translateY(80px); 
     transition: 1s;

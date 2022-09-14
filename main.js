@@ -1,9 +1,12 @@
 const titulo = document.querySelector('.nome')
 const foto = document.querySelector(".eu")
-const projetos = document.querySelector(".projetos")
-const contato = document.querySelector(".contato")
-const targets = [projetos, contato]
+
+const targets = document.querySelectorAll(".content-anime")
 const animationClass = "anime"
+
+const menuItens = document.querySelectorAll('.menu-top a[href^="#"]')
+
+/*type writer e animação de entrada */
 
 function typeWriter(elemento){
     const texto = "Bruno Xavier"
@@ -24,6 +27,7 @@ setTimeout(()=>{
     
 }, 1000)
 
+/*Animação do scroll*/
 
 function animeScroll(){
     const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
@@ -43,3 +47,18 @@ if(targets.length){
         animeScroll();
     })
 }
+
+/*Suavizar links internos*/ 
+
+menuItens.forEach((item) => {
+    item.addEventListener('click',(event) => {
+        event.preventDefault()
+        const element = event.target
+        const id = element.getAttribute('href')
+        const conteudo = document.querySelector(id).offsetTop
+        window.scroll({
+            top: conteudo,
+            behavior: "smooth"
+        })
+    })
+})
