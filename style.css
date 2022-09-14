@@ -74,7 +74,7 @@ nav a:hover{
 /*conteudo*/
 
 main{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: grid;
     row-gap: 50px;
@@ -82,21 +82,18 @@ main{
 
 .eu{
     width: 100%;
-    margin-left: 100px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
 .minha-foto{
     width: 300px;
-    
 }
 
 .sobre{
-    height: 600px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     justify-content: center;
     align-items: center;
 }
@@ -119,10 +116,9 @@ h2{
     margin: 30px 0px;
 }
 
-.sobre p{
-    width: 800px;
+.descricao{
+    padding-right: 100px;
     text-align: justify;
-
 }
 
 /*Projetos*/
@@ -212,11 +208,27 @@ footer p{
         padding: 30px;
     }
 
-
     .flex-projetos{
         display: grid;
         grid-template-columns: auto auto;
         place-content: center;
+    }
+
+    .sobre{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .descricao{
+        padding: 0px;
+    }
+
+    .minha-foto{
+        margin: auto;
+    }
+
+    h2{
+        text-align: center;
     }
 }
 

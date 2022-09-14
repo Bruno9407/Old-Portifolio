@@ -18,7 +18,10 @@ const titulo = document.querySelector('.nome');
 const foto = document.querySelector(".eu")
 setTimeout(()=>{
     typeWriter(titulo)
-    foto.classList.add("foto")
+    if(window.innerWidth >= 1000){
+        foto.classList.add("foto")
+    }
+    
 }, 1000)
 
 
