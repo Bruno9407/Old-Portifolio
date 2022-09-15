@@ -1,0 +1,146 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fa-regular, .fa-solid{
+    font-size: 1.3rem;
+    color: #5CA720;
+}
+
+.fa-star{
+    color: #000;
+}
+
+/*Cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin: 20px;
+}
+nav i{
+    margin-right: 20px;
+}
+
+.promo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+/*Produto*/
+main{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 60px;
+    justify-content: space-around;
+    border-top: 1px solid #A5A1A1;
+    padding-top: 50px;
+}
+
+.produto p{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.img-produto{
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.valor{
+    color: #5CA720;
+}
+
+/*Footer 1*/
+
+footer{
+    background: #F9F9F9;
+    margin-top: 50px;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #A5A1A1;
+    padding: 40px 80px;
+}
+
+.contato ul{
+    list-style: none;
+}
+
+.contato li{
+    margin: 5px;
+}
+
+input{
+    padding: 10px 15px;
+    border: none;
+}
+
+.inscreverse{
+    background: #5CA720;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+/*Footer 2*/
+
+.copy{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #A5A1A1;
+    padding: 40px 60px;
+}
+
+.redes{
+    width: 200px;
+}
+
+.fa-brands{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.fa-instagram, .fa-square-facebook{  
+    color: #5CA720;
+}
+
+@media (max-width: 900px){
+    main{
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 50px;
+    }
+
+    .contato{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 30px
+        ;
+    }
+
+    .inscreva{
+        display: grid;
+        row-gap: 20px;
+    }
+
+}

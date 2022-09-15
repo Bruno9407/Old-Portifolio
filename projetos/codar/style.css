@@ -1,0 +1,249 @@
+/*Gerais*/
+
+*{
+    margin: 0px;
+}
+
+body{
+    display: grid;
+    gap: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+}
+
+.botao{
+    color: white;
+    background-color: #d6000d;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+
+
+/*Icons*/
+
+.fa-circle-check{
+    color: #d6000d;
+}
+
+.fa-circle{
+    color: #d6000d;
+    font-size: 60px;
+    padding-right: 15px;
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: #d6000d;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100px;
+}
+
+h1{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    color: #d6000d;
+    font-style: italic;
+}
+
+h1 span{
+    color: black;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+a{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+/*Main*/
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+}
+
+/*Grid*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.orcamento{
+    display: grid;
+    place-content: center;
+    justify-items: left;
+    gap: 40px;
+}
+
+h2{
+    color: #d6000d;
+    font-size: 48px;
+    display: inline-block;
+    margin: 0px;
+}
+
+/*Vantagens*/
+
+.vantagens{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.vantagens p{
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+/*Telefone*/
+.telefone{
+    display: grid;
+    gap: 30px;
+    justify-content: start;
+    margin-bottom: 100px;
+}
+
+input{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    border: none;
+    border-radius: 5px;
+}
+
+/*Comentarios*/
+
+.comentarios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.comentario-item{
+    background-color: rgba(0, 0, 0, .2);
+    max-width: 400px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: center;
+    align-items: start;
+}
+
+/*Footer*/
+
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer div{
+    width: 300px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.codar{
+    font-size: 32px;
+}
+
+.icons-redes{
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+}
+
+
+/*querries*/
+
+@media (max-width: 650px) {
+    /*Header*/
+    h1{
+        width: 100%;
+    }
+    nav{
+       margin: auto;
+    }
+
+    main{
+        justify-content: center;
+    }
+
+    /*Grid*/
+    .grid{
+        grid-template-columns: auto;
+        row-gap: 60px;
+        justify-items: center;
+    }
+
+    .vantagens{
+        justify-content: center;
+    }
+
+    .grid p{
+        font-size: 20px;
+        padding: 20px 5px;
+    }
+
+    .vantagens{
+        grid-row: 4;
+        justify-items: center;
+    }
+
+    /*telefone*/
+
+    .telefone{
+        justify-content: center;
+    }
+
+    /*footer*/
+    footer{
+        display: grid;
+        justify-content: start;
+    }
+
+    footer div{
+        padding: 30px;
+    }
+}
+
+
+
+
+
+
