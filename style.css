@@ -141,10 +141,26 @@ h2{
     top: -20px;
 }
 
+#codar{
+    background: url("./imgs/desktop-codar.png");
+    background-size: cover;
+}
+
+#selfcare{
+    background: url("./imgs/desktop-selfcare.png");
+    background-size: cover;
+}
+
+#github{
+    background: url("./imgs/GitHub.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .projeto-item{
-    background: url("./imgs/desktop.png");
-    background-size: cover;
+
     position: relative;
     width: 300px;
     height: 400px;
