@@ -158,6 +158,13 @@ h2{
     background-position: center;
 }
 
+#nodejs{
+    background: url("./imgs/cadastrojogos.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
 
 .projeto-item{
 
