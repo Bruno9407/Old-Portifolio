@@ -14,7 +14,8 @@
         <h1 class="portifolio">Portifolio</h1>
         <nav>
             <ul class="menu-top">
-                <li><a href="index.html">Sobre</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -23,7 +24,7 @@
 
     <main>
         
-        <article class="sobre">
+        <article class="sobre" id="sobre">
             <section class="info">
                 <h2>Sobre</h2>
 
@@ -38,40 +39,58 @@
             </section>
         </article>
 
+        <article class="content-anime" id="tecnologias">
+            <h2>Tecnologias</h2>
+
+            <section class="grid-tecnologias">
+                <i class="fa-brands fa-html5 tech" id="html"><span class="tech-name">HTML</span></i>
+                <i class="fa-brands fa-css3-alt tech" id="css"><span class="tech-name">CSS</span></i>
+                <i class="fa-brands fa-square-js tech" id="js"><span class="tech-name">JavaScript</span></i>
+                <i class="fa-brands fa-react tech" id="react"><span class="tech-name">React</span></i>
+                <i class="fa-brands fa-node tech" id="node"><span class="tech-name">Node</span></i>
+                <i class="fa-brands fa-python tech" id="python"><span class="tech-name">Python</span></i>
+            </section>
+
+            <p class="descricao-tech">Selecione uma tecnologia para mais informações...</p>
+        </article>
+
         <article class="content-anime" id="projetos">
             <h2>Projetos</h2>
 
-            <section class="flex-projetos">
+            <section class="grid-projetos">
                 <a href="./projetos/codar/" target="_blank">
-                    <div class="projeto-item" id="codar">
-                        <span class="nome-projeto">Codar [HTML, CSS]</span>
-                    </div>
+                    <h3 class="nome-projeto">Codar</h3>
+                    <div class="projeto-item" id="codar"></div>
+                    <p class="tecnologias">Tecnologias: HTML e CSS.</p>
                 </a>
 
                 <a href="./projetos/selfcare/" target="_blank">
-                    <div class="projeto-item" id="selfcare">
-                        <span class="nome-projeto">Selfcare [HTML, CSS]</span>
-                    </div>
+                    <h3 class="nome-projeto">Selfcare</h3>
+                    <div class="projeto-item" id="selfcare"></div>
+                    <p class="tecnologias">Tecnologias: HTML e CSS.</p>
                 </a>
 
                 <a href="https://github.com/Bruno9407/Node-Cadastro-De-Jogos" target="_blank">
-                    <div class="projeto-item" id="cadastro">
-                        <span class="nome-projeto">Cadastro de jogos com NodeJS</span>
-                    </div>
+                    <h3 class="nome-projeto">Cadastro de Jogos.</h3>
+                    <div class="projeto-item" id="cadastro"></div>
+                    <p class="tecnologias">Tecnologias: HTML e NodeJS.</p>
                 </a>
 
                 <div class="projeto-breve hidden">
+                    <h3 class="nome-projeto"></h3>
                     <span class="breve">Em breve</span>
+                    <p class="tecnologias"></p>
                 </div>
 
                 <div class="projeto-breve hidden">
+                    <h3 class="nome-projeto"></h3>
                     <span class="breve">Em breve</span>
+                    <p class="tecnologias"></p>
                 </div>
 
                 <a href="https://github.com/Bruno9407" target="_blank">
-                    <div class="projeto-item" id="github">
-                        <span class="nome-projeto">Meu GitHub para mais projetos</span>
-                    </div>
+                    <h3 class="nome-projeto">Meu GitHub</h3>
+                    <div class="projeto-item" id="github"></div>
                 </a>
             </section>
         </article>
@@ -97,6 +116,5 @@
     </footer>
 
     <script src="main.js"></script>
-
 </body>
 </html>

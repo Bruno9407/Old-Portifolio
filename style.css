@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p{
@@ -20,7 +20,6 @@ p a:hover{
     text-decoration: underline;
 }
 
-
 /*icons*/
 
 .fa-solid, .metodo .fa-brands{
@@ -31,10 +30,7 @@ p a:hover{
 
 .fa-brands{
     font-size: 30px;
-    
 }
-
-
 
 /*Header*/
 header{
@@ -75,7 +71,7 @@ nav a:hover{
 
 main{
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 50px auto;
     display: grid;
     row-gap: 150px;
 }
@@ -102,7 +98,6 @@ h2{
     display: block;
     margin: 50px 0px;
     font-size: 34px;
-    font-family: 'Silkscreen', Arial, Helvetica, sans-serif;
 }
 
 .nome{
@@ -121,24 +116,80 @@ h2{
     text-align: justify;
 }
 
+/*tecnologias*/
+
+.grid-tecnologias{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.tech{
+    font-size: 60px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tech-name{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tech:hover{
+    background-color:aliceblue;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+
+.descricao-tech{
+    margin: auto;
+    margin-top: 60px;
+    max-width: 800px;
+    text-align: justify;
+}
+
 /*Projetos*/
-.flex-projetos{
+.grid-projetos{
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     gap: 80px;
 }
 
-.flex-projetos a{
+.grid-projetos a{
     max-width: 300px;
     margin: 0px;
     padding: 0px;
 }
 
 .nome-projeto{
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.tecnologias{
+    margin-top: 10px;
+}
+
+.projeto-item{
     position: relative;
-    left: 20px;
-    top: -20px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
+}
+
+.projeto-breve{
+    background-color: gray;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 }
 
 #codar{
@@ -165,25 +216,6 @@ h2{
 
 }
 
-
-.projeto-item{
-
-    position: relative;
-    width: 300px;
-    height: 400px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
-}
-
-.projeto-breve{
-    background-color: gray;
-    position: relative;
-    width: 300px;
-    height: 400px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
-}
-
 .breve{
     position: absolute;
     top: 190px;
@@ -193,8 +225,6 @@ h2{
     background-color: black;
     color: white;
 }
-
-
 
 /*Contato*/
 
@@ -211,7 +241,6 @@ h2{
 
 /*anime*/
 
-
 .content-anime{
     opacity: 0;
     transform: translateY(80px); 
@@ -223,7 +252,6 @@ h2{
     transform: translateY(0);
     
 }
-
 
 /*Footer*/
 
@@ -243,15 +271,18 @@ footer p{
     margin: 0px 15px;
 }
 
-
-
-
 @media (max-width: 1000px){
     main{
         padding: 30px;
     }
 
-    .flex-projetos{
+    .grid-tecnologias{
+        display: grid;
+        grid-template-columns: auto auto;
+        place-content: center;
+    }
+
+    .grid-projetos{
         display: grid;
         grid-template-columns: auto auto;
         place-content: center;
@@ -285,7 +316,7 @@ footer p{
         width: 100%;
     }
 
-    .flex-projetos{
+    .grid-projetos{
         grid-template-columns: auto;
         place-content: center;
     }
