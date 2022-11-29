@@ -6,6 +6,9 @@ const animationClass = "anime"
 
 const menuItens = document.querySelectorAll('.menu-top a[href^="#"]')
 
+const btnmobile = document.querySelector(".menu-btn")
+const nav = document.getElementById("nav");
+
 const techs = document.querySelectorAll(".tech")
 const descArea = document.querySelector(".descricao-tech")
 
@@ -57,8 +60,6 @@ function animeScroll(){
     })
 }
 
-
-
 if(targets.length){
     window.addEventListener('scroll', ()=>{
         animeScroll();
@@ -77,6 +78,7 @@ menuItens.forEach((item) => {
             top: conteudo,
             behavior: "smooth"
         })
+        nav.classList.remove("active")
     })
 })
 
@@ -91,3 +93,11 @@ function mostraDescricao(event){
 techs.forEach((item) =>{ 
     item.addEventListener("click", mostraDescricao)
 })
+
+/*Botão Mobile*/
+
+function toggleMenu() {
+    nav.classList.toggle("active");
+}
+
+btnmobile.addEventListener('click', toggleMenu);
