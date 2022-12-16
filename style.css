@@ -217,6 +217,12 @@ h2{
 
 }
 
+#checkspeech{
+    background: url("./imgs/checkspeech.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .breve{
     position: absolute;
     top: 190px;
