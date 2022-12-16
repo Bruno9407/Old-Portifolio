@@ -374,6 +374,19 @@ i {
   border: 1px solid #037498;
 }
 
+/*Scrool bar style*/
+
+::-webkit-scrollbar{
+  background-color: #071e3a;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #037498;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
+
+
 
 /*Menu BTN*/
 
