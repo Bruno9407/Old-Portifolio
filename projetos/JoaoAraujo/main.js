@@ -1,8 +1,9 @@
-document.getElementsByClassName("cta").addEventListerner(Event => {
-    Event.preventDefault();
-    const content = document.getElementsByClassName("contratos");
+document.querySelectorAll(".cta").forEach(cta => cta.addEventListener('click', event => {
+    console.log("click")
+    event.preventDefault();
+    const conteudo = document.querySelector("#contrato").offsetTop
     window.scroll({
-        top: content,
+        top: conteudo,
         behavior: "smooth"
-    });
-})
+    })
+}))
